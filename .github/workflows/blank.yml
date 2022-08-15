@@ -1,0 +1,5 @@
+
+name: test
+on:
+  push:
+    tags: 'v*'
