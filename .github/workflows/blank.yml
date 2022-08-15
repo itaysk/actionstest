@@ -4,3 +4,9 @@ on:
   push:
     tags: 
       - 'v*'
+jobs:
+  xxx:
+    name: xxx
+    runs-on: ubuntu-18.04
+    steps:
+      - run: date
