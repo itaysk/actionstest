@@ -1,7 +1,9 @@
 
 name: test
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+  
 jobs:
   xxx:
     name: xxx
@@ -16,7 +18,7 @@ jobs:
         run: sleep 5; touch yo
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@9a38df85a5ce1b0869b2b8b4af91d04f9cde6847
+        uses: itaysk/tracee-action@e10179fe08cedbdca4d8d42882cc0365ac95dfc9
         with:
           fail-on-diff: "true"
           create-pr: "true"
