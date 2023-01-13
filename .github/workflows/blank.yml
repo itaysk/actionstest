@@ -1,12 +1,22 @@
 
 name: test
 on:
-  push:
-    tags: 
-      - 'v[0-9]+.[0-9]+'
+  workflow_dispatch
 jobs:
   xxx:
     name: xxx
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - run: date
+      - uses: actions/checkout@v2
+
+      - name: Start Tracee
+        uses: itaysk/tracee-action@be3bd3bdbc306bc9ec3a040005795a4f354d06ef
+
+      - name: do something
+        run: sleep 5; touch yo
+        
+      - name: Stop Tracee
+        uses: itaysk/tracee-action@b2d4455cb54a252a921bb56b553afe216f66eae8
+        with:
+          fail-on-diff: "true"
+          create-pr: "true"
