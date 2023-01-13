@@ -18,7 +18,7 @@ jobs:
         run: sleep 5; touch yo
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@119ebffc1f11056f139cb8c5641cca8b0c656724
+        uses: itaysk/tracee-action@a2af4c790eaa1c5652fa294fb81894a8010a98f5
         with:
           fail-on-diff: "true"
           create-pr: "true"
