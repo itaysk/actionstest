@@ -7,8 +7,7 @@
     "binary_ctime": 1672884661708975600,
     "process_args": [
       "/usr/bin/bash",
-      "-e",
-      "/home/runner/work/_temp/82164da7-a553-4673-a834-cf604a7098c7.sh"
+      "-e"
     ]
   },
   {
@@ -23,8 +22,7 @@
       "--norc",
       "-e",
       "-o",
-      "pipefail",
-      "/home/runner/work/_temp/d74a788f-1617-4e63-a157-f6bfd41a1797.sh"
+      "pipefail"
     ]
   },
   {
