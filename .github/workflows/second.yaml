@@ -1,0 +1,24 @@
+
+name: test
+on:
+  workflow_dispatch:
+  push:
+  
+jobs:
+  xxx:
+    name: xxx
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Start Tracee
+        uses: itaysk/tracee-action@be3bd3bdbc306bc9ec3a040005795a4f354d06ef
+
+      - name: do something
+        run: sleep 4; touch second
+        
+      - name: Stop Tracee
+        uses: itaysk/tracee-action@a0465bb83683901ff040340df31890f23e2247a2
+        with:
+          fail-on-diff: "true"
+          create-pr: "true"
