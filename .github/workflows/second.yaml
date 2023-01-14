@@ -1,5 +1,5 @@
 
-name: test
+name: test-tracee
 on:
   workflow_dispatch:
   push:
