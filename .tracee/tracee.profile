@@ -8,7 +8,7 @@
     "process_args": [
       "/usr/bin/bash",
       "-e",
-      "/home/runner/work/_temp/82164da7-a553-4673-a834-cf604a7098c7.sh"
+      "/home/runner/work/_temp/760f0ced-3dc5-4933-98bd-d5276eb77b86.sh"
     ]
   },
   {
@@ -24,7 +24,7 @@
       "-e",
       "-o",
       "pipefail",
-      "/home/runner/work/_temp/d74a788f-1617-4e63-a157-f6bfd41a1797.sh"
+      "/home/runner/work/_temp/3a0a214c-ab14-46a5-9b48-383d2b5262a7.sh"
     ]
   },
   {
