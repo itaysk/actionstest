@@ -9,6 +9,6 @@ jobs:
     - shell: bash
       run: |
         docker run -d  alpine sleep infinity
-        pstree -h
+        pstree -a -l
     #  - name: Debugging with ssh
     #    uses: lhotari/action-upterm@v1
