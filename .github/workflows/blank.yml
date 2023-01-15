@@ -12,13 +12,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Start Tracee
-        uses: itaysk/tracee-action@be3bd3bdbc306bc9ec3a040005795a4f354d06ef
+        uses: itaysk/tracee-action@6c79a13adb1931ff0e764dfb6e9233ba2b1bc83a
 
       - name: do something
         run: sleep 5; touch yo
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@a0465bb83683901ff040340df31890f23e2247a2
+        uses: itaysk/tracee-action@3047c579fa947d056863115470486c5d7bb2f312
         with:
           fail-on-diff: "true"
           create-pr: "true"
