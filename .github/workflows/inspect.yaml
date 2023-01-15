@@ -6,5 +6,9 @@ jobs:
     name: xxx
     runs-on: ubuntu-latest
     steps:
-      - name: Debugging with ssh
-        uses: lhotari/action-upterm@v1
+    - shell: bash
+    run: |
+      docker run -d  alpine sleep infinity
+      pstree -h
+    #  - name: Debugging with ssh
+    #    uses: lhotari/action-upterm@v1
