@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Start Tracee
-        uses: itaysk/tracee-action@6c79a13adb1931ff0e764dfb6e9233ba2b1bc83a
+        uses: itaysk/tracee-action@956dc2aed7469281a79dc188271f6f85d6d7f8b3
 
       - name: do something
         run: sleep 5; touch yo
