@@ -2,7 +2,6 @@
 name: test-tracee
 on:
   workflow_dispatch:
-  push:
   
 jobs:
   xxx:
