@@ -1,0 +1,19 @@
+name: test
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  xxx:
+    name: xxx
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: do something
+        run: |
+          unset -e
+          cd /
+          docker ps
+          ps -aux
+          
+      - name: Debugging with ssh
+        uses: lhotari/action-upterm@v1
