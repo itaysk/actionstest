@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Start Tracee
-        uses: itaysk/tracee-action@5af77018d925462d101d85b349f65d11cc1b8a9b
+        uses: itaysk/tracee-action@350f94191d027242918e5ed06dcd0e4aee6e20eb
 
       - name: do something
         run: ping google.com -c 10 || true
