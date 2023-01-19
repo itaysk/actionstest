@@ -17,7 +17,7 @@ jobs:
         run: ping google.com -c 10 || true
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@ca6f572e86bd9b253d273e258b2ff39750b820a4
+        uses: itaysk/tracee-action@f35385a428b42a974b96f57504a033c3a5484717
         with:
           fail-on-diff: "true"
           create-pr: "true"
