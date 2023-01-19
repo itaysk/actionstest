@@ -14,7 +14,7 @@ jobs:
         uses: itaysk/tracee-action@6423ef93562d8d14bbd46bb6c297b1b80ff69399
 
       - name: do something
-        run: sleep 5; ping google.com; touch yo
+        run: sleep 5; ping -c 3 google.com; touch yo
         
       - name: Stop Tracee
         uses: itaysk/tracee-action@a25fd8734f4a4a18a3ffaa887330ab80fcdc3db6
