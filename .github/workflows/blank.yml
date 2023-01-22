@@ -11,13 +11,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Start Tracee
-        uses: itaysk/tracee-action@37cc25bde2ab2c8e9a16b021082230e173641bea
+        uses: itaysk/tracee-action@95ef2286dc3a9d7219f39191f2de1fb1d4effaa9
 
       - name: do something
         run: ping google.com -c 1 || true
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@f35385a428b42a974b96f57504a033c3a5484717
+        uses: itaysk/tracee-action@4c016c7c706a6dc26f93a7a84c53ae046e1699c7
         with:
           fail-on-diff: "true"
           create-pr: "true"
