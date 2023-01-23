@@ -18,6 +18,8 @@ jobs:
         
       - name: Stop Tracee
         uses: itaysk/tracee-action@4c016c7c706a6dc26f93a7a84c53ae046e1699c7
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           fail-on-diff: "true"
           create-pr: "true"
