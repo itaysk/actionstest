@@ -17,9 +17,9 @@ jobs:
         run: ping google.com -c 1 || touch foo
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@4c016c7c706a6dc26f93a7a84c53ae046e1699c7
+        uses: itaysk/tracee-action@b8f68131d2db78ee73826e8ef4ca89c5c8aa2cdc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          fail-on-diff: "true"
+          fail-on-diff: "false"
           create-pr: "true"
