@@ -12,6 +12,8 @@ jobs:
 
       - name: Start Tracee
         uses: itaysk/tracee-action@a6861e138ccffc9650b1b821c76d068e00490969
+        with:
+          envs: "true"
 
       - name: do something
         run: ping google.com -c 1 || touch foo
