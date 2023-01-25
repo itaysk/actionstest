@@ -11,13 +11,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Start Tracee
-        uses: itaysk/tracee-action@7eec0310870884d2b3411c44c4f8882dcfb2a3b5
+        uses: itaysk/tracee-action@a20ad76a0499e496865d7d016d48a53feb739abd
 
       - name: do something
         run: ping google.com -c 1 || touch foo
         
       - name: Stop Tracee
-        uses: itaysk/tracee-action@b8f68131d2db78ee73826e8ef4ca89c5c8aa2cdc
+        uses: itaysk/tracee-action@a61a6a1609d90a877fa5d06f9b9755e6c9d35f05
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
