@@ -10,8 +10,8 @@ jobs:
 
       - name: has vulnerabilities
         run: |
-          jq --exit-status --arg sev 'MEDIUM' '[ .Results[].Vulnerabilities[].Severity ] | any($sev)' ${{ github.workspace }}/nodejs.trivy.json
+          jq --exit-status --arg sev 'MEDIUM' '[ .Results[].Vulnerabilities[].Severity ] | any($sev) | not' ${{ github.workspace }}/nodejs.trivy.json
           
       - name: has bad package
         run: |
-          jq --exit-status --arg pkg 'jquery@3.3.9' '[ .Results[].Packages[].ID ] | any($pkg)' ${{ github.workspace }}/nodejs.trivy.json
+          jq --exit-status --arg pkg 'jquery@3.3.9' '[ .Results[].Packages[].ID ] | any($pkg) | not' ${{ github.workspace }}/nodejs.trivy.json
