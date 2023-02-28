@@ -1,7 +1,6 @@
 name: vulntest
 on:
   workflow_dispatch:
-  push:
 jobs:
   one:
     name: one
